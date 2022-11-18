@@ -1,6 +1,10 @@
 Is it a list? Is it a generator? No its a
 # LazyList
 
+<p align='center'>
+  <img src='./lazylist.svg'>
+</p>
+
 Have you ever found yourself in a situation, where you used a generator, but then realized, that you sometimes need an element from further in the future? Or specific past element? This very specific problem is no more, thank to LazyList! (Wow!)
 
 ## What does it do?
@@ -9,3 +13,11 @@ The LazyList is mutable and inserts, appends and extends are possible. The LazyL
 
 When you try to access at an index, that the generator never generates, you get a StopIteration-Exception.
 len(lazyList) will return inf, while the generator end has not been reached.
+
+## Attribution
+
+Icon is based on:
+
+Lazy by Adrien Coquet from <a href="https://thenounproject.com/browse/icons/term/lazy/" target="_blank" title="Lazy Icons">Noun Project</a>
+
+List by Kirby Wu from <a href="https://thenounproject.com/browse/icons/term/list/" target="_blank" title="List Icons">Noun Project</a>
