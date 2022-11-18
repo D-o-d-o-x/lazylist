@@ -56,8 +56,11 @@ class LazyList(list):
     def peak(self, offset=0):
         return self[self._n - 1 + offset]
 
-    def iterIndex(self):
+    def curIndex(self):
         return self._n - 1
+
+    def nextIndex(self):
+        return self._n
 
     def __getitem__(self, index):
         self._requireLen(index)
