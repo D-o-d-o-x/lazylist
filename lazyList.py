@@ -72,5 +72,6 @@ class LazyList(list):
         super().append(item)
 
     def extend(self, other):
+        # TODO: Don't force expand second?
         self._requireLen(-1)
         super().extend(other)
